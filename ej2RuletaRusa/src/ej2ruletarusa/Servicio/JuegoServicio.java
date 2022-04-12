@@ -34,11 +34,12 @@ Pensar la lógica necesaria para realizar esto, usando los atributos de la clase
         
         for (Jugador jugad : jugadores) {
             if(js.disparar(r, jugad)){
-                System.out.println("FIN DEL JUEGO - Se mojó el " + jugad);
+                System.out.println("FIN DEL JUEGO - Se mojó el " + jugad.getNombre());
                return true;
             }
-            //***********para control
-            System.out.println(jugad);
+            //***********para control**************************
+            System.out.println("disparó el " + jugad.getNombre() + " y no se mojó");
+            //************************************************
         }
         return false;
     }
